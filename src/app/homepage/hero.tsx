@@ -8,6 +8,7 @@ import { steps } from "@/shared/utils/steps";
 import { StepType } from "@/types/steps.types";
 import { TrendingType } from "@/types/trending.types";
 import { trending } from "@/shared/utils/trending";
+import Link from "next/link";
 
 
 const Hero = () => {
@@ -18,7 +19,7 @@ const Hero = () => {
           Learn. <span className="text-green">Challenge.</span> Earn.
         </h1>
         <p className="text-center w-11/12">
-          Learning doesn't have to be boring. Vertix makes it fun, engaging, and
+          Learning doesn&apos;t have to be boring. Vertix makes it fun, engaging, and
           rewarding with gamified tasks, clear goals, and rewards. Vertix
           leverages the power of the{" "}
           <span className="text-green font-bold">Solana blockchain</span> and{" "}
@@ -33,13 +34,13 @@ const Hero = () => {
             <p>Join community</p>
             <Image src={Join} alt="join icon" width={20} height={20} />
           </Button>
-          <Button
-            link="#"
-            classname="bg-white rounded-lg text-green border-green border-2 center hover:scale-95 duration-300 transition-all flex gap-2"
+          <Link
+            href="/create"
+            className="p-3 bg-white rounded-lg text-green border-green border-2 center hover:scale-95 duration-300 transition-all flex gap-2"
           >
             <p>Create community</p>
             <Image src={Build} alt="join icon" width={20} height={20} />
-          </Button>
+          </Link>
         </div>
       </div>
       <div className="w-full center">

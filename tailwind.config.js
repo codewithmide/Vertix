@@ -2,9 +2,7 @@
 module.exports = {
   darkMode: 'class',
   content: [
-    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/**/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
     fontSize: {
@@ -17,7 +15,7 @@ module.exports = {
       xxxl: '5rem'
     },
     colors: {
-      secondary: "#C4C4C4",
+      secondary: "#FBFBFB",
       white: "#FFFFFF",
       black: '#121212',
       red: "#FF002E",
@@ -25,6 +23,7 @@ module.exports = {
       green: '#00AC4F',
       lightGreen: "#E1FBED",
       error: '#DA0060',
+      action: '#00AC4F',
     },
     extend: {
       screens: {
