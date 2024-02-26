@@ -41,29 +41,34 @@ export const topParticipants = [
     username: "AJ123",
     image: creator1,
     position: 1,
+    point: "2000 XP",
   },
   {
     fullName: "Bob Smith",
     username: "BobTheCoder",
     image: creator2,
     position: 2,
+    point: "1800 XP"
   },
   {
     fullName: "Charlie Lee",
     username: "CryptoCharlie",
     image: creator3,
     position: 3,
+    point: "1500 XP"
   },
   {
     fullName: "David Williams",
     username: "DataWiz",
     image: creator4,
     position: 4,
+    point: "1200 XP"
   },
   {
     fullName: "Eve Jones",
     username: "GamerGirl",
     image: creator5,
     position: 5,
+    point: "1000 XP"
   },
 ];

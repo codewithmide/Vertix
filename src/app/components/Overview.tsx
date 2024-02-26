@@ -6,16 +6,13 @@ const Overview = ({ data, classname }: any) => {
         <>
             <div className="flex flex-wrap gap-4">
                 {data.map((data: any, index: number) =>
-                    <div key={index} className={classnames("flex justify-between h-48 w-[48%] rounded-md text-textColor", classname)} style={{ background: data.color, color: data.color === '#171714' ? "#ffffff" : "" }}>
+                    <div key={index} className={classnames("flex justify-between h-48 w-[23%] rounded-md text-textColor", classname)} style={{ background: data.color, color: data.color === '#171714' ? "#ffffff" : "" }}>
                         <div className="flex flex-col justify-between h-full">
                             <small className="font-medium text-md">{data.name}</small>
-
                             <p className="text-xxl clash font-semibold mt-3 text-[#171714] font-inter" style={{ color: data.color === '#171714' ? "#ffffff" : "" }}>{data.number}</p>
                         </div>
-
-                    </div>)}
-
-
+                    </div>
+                )}
             </div>
         </>
     );

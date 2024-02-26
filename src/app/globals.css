@@ -30,6 +30,12 @@
   justify-content: space-between;
 }
 
+.ended {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
 body {
   padding: 0;
   margin: 0;

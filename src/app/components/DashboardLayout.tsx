@@ -45,7 +45,7 @@ const DashboardLayout = ({ children, path, onSearch }: any) => {
                             preIcon={searchIcon}
                             placeholder={`Search for ${path?.toLowerCase()}`}
                             onChange={(e: { target: { value: any; }; }) => onSearch(e.target.value)}
-                            classname="w-full rounded-full" />
+                            classname="w-full" />
                         )}
                     </div>
 

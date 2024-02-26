@@ -1,6 +1,7 @@
 import './globals.css';
 import type { Metadata } from 'next';
 import SolanaProvider from '@/context/provider';
+import { Toaster } from 'react-hot-toast';
 
 export const metadata: Metadata = {
   title: 'Vertix',
@@ -17,6 +18,7 @@ export default function RootLayout({
       <body className="poppins">
         <SolanaProvider>
           {children}
+          <Toaster/>
         </SolanaProvider>
       </body>
     </html>

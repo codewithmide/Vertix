@@ -138,7 +138,7 @@ export const Input = ({ classname, label, name, value, onChange, placeholder, ty
                     value={value}
                     placeholder={placeholder}
                     onChange={onChange}
-                    className="border border-[#BFBEBE] rounded-md focus:outline-brand focus:bg-none p-3 placeholder-[#777373] bg-transparent w-full">
+                    className="border border-green rounded-md focus:outline-none focus:bg-none p-3 placeholder-[#777373] bg-transparent w-full">
                 </textarea>
             </div>
         );
@@ -225,14 +225,14 @@ export const Input = ({ classname, label, name, value, onChange, placeholder, ty
         <div className={classnames('flex flex-col gap-2 ', classname)}>
             {label && <small className='text-sm font-medium'>{label}</small>}
 
-            <div className='flex items-center input-wrapper outline-2 outline-transparent text-base border border-green text-sm focus:outline-none focus:border-dark bg-transparent '>
+            <div className='flex items-center justify-center input-wrapper outline-2 outline-transparent text-base border border-green text-sm focus:outline-none focus:border-dark bg-transparent rounded-lg'>
                 {
                     preIcon
                     && <img className="h-4 w-4 ml-3" src={preIcon} alt="" />
                 }
                 <input
                     type={type} id={label}
-                    className="focus:outline-none focus:bg-none p-3 placeholder-[#777373] bg-transparent w-full"
+                    className="focus:outline-none focus:bg-none p-3 placeholder-[#777373] bg-transparent w-[95%]"
                     placeholder={placeholder}
                     value={value}
                     onChange={onChange}

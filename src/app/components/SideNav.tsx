@@ -73,10 +73,10 @@ const SideNav = ({ classname, text, active }: any) => {
         </div>
 
         <Button
-          classname="text-action flex gap-2 items-center p-5 mt-16"
+          classname="text-red flex gap-2 items-center p-5 mt-16"
           link={logoutAction}
         >
-          <Image src={logout} className="h-4 w-4 -rotate-90" alt="" />
+          <Image src={logout} className="h-4 w-4 " alt="" />
           <small>Logout</small>
         </Button>
       </div>
