@@ -27,13 +27,13 @@ const Hero = () => {
           learning and reward achievement.
         </p>
         <div className="between gap-6 mt-6">
-          <Button
-            link="#"
-            classname="bg-green border-green border-2 hover:scale-95 duration-300 transition-all rounded-lg text-white center gap-3"
+          <Link
+            href="/join"
+            className="p-3 bg-green border-green border-2 hover:scale-95 duration-300 transition-all rounded-lg text-white center gap-3"
           >
             <p>Join community</p>
             <Image src={Join} alt="join icon" width={20} height={20} />
-          </Button>
+          </Link>
           <Link
             href="/create"
             className="p-3 bg-white rounded-lg text-green border-green border-2 center hover:scale-95 duration-300 transition-all flex gap-2"
