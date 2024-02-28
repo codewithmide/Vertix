@@ -1,4 +1,4 @@
-import DashboardLayout from "@/app/components/DashboardLayout";
+import {DashboardLayout} from "@/app/components/DashboardLayout";
 import { LeaderboardTable } from "./components/LeaderboardTable";
 import { topParticipants } from "@/shared/mock/dashboard";
 

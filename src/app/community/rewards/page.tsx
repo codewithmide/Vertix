@@ -1,4 +1,4 @@
-import DashboardLayout from "@/app/components/DashboardLayout";
+import {DashboardLayout} from "@/app/components/DashboardLayout";
 import { rewards } from "@/shared/mock/rewards";
 
 const Rewards = () => {
