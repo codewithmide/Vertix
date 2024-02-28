@@ -41,7 +41,34 @@ const navLinks = [
   },
 ];
 
-const SideNav = ({ classname, text, active }: any) => {
+const profileLinks = [
+  {
+    name: "Dashboard",
+    link: "/profile",
+    icon: dashboard1,
+    activeIcon: dashboard2,
+  },
+  {
+    name: "Challenges",
+    link: "/profile/challenges",
+    icon: task1,
+    activeIcon: task2,
+  },
+  {
+    name: "Rewards",
+    link: "/profile/rewards",
+    icon: reward1,
+    activeIcon: reward2,
+  },
+  {
+    name: "Leaderboard",
+    link: "/profile/leaderboard",
+    icon: leaderboard1,
+    activeIcon: leaderboard2,
+  },
+];
+
+export const SideNav = ({ classname, text, active }: any) => {
   const router = useRouter();
 
   const logoutAction = () => {
@@ -84,4 +111,46 @@ const SideNav = ({ classname, text, active }: any) => {
   );
 };
 
-export default SideNav;
+export const SideNavProfile = ({ classname, text, active }: any) => {
+  const router = useRouter();
+
+  const logoutAction = () => {
+    router.push("/homepage");
+  };
+
+  return (
+    <div className="min-w-[15rem] px-4 bg-white border-r-green border-r">
+      <div className="sticky top-0 flex flex-col justify-between max-h-screen h-full pb-10 mt-10">
+        <div className="">
+          {profileLinks?.map((item, index) => (
+            <div
+              key={index}
+              onClick={() => router.push(item.link)}
+              className={`px-4 py-3  cursor-pointer text-sm mb-4 flex items-center gap-2 rounded-md ${
+                active === item.name
+                  ? "bg-action text-white"
+                  : "text-[#777373] bg-white hover:bg-lightGreen"
+              }`}
+            >
+              <Image
+                src={active === item.name ? item.activeIcon : item.icon}
+                className="h-5 w-5"
+                alt=""
+              />
+              <Link href={item.link}>{item.name}</Link>
+            </div>
+          ))}
+        </div>
+
+        <Button
+          classname="text-red flex gap-2 items-center p-5 mt-16"
+          link={logoutAction}
+        >
+          <Image src={logout} className="h-4 w-4 " alt="" />
+          <small>Logout</small>
+        </Button>
+      </div>
+    </div>
+  );
+};
+

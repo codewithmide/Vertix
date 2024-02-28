@@ -1,6 +1,6 @@
 "use client";
 
-import DashboardLayout from "../components/DashboardLayout";
+import {DashboardProfileLayout} from "../components/DashboardLayout";
 import Overview, { OverviewLoading } from "@/app/components/Overview";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
@@ -17,7 +17,7 @@ export default function Home() {
   const referralLink: string | undefined = "https://vertix.com/community-name/id?=123748";
 
   return (
-    <DashboardLayout path="Dashboard">
+    <DashboardProfileLayout path="Dashboard">
       <main className=" flex flex-col gap-5 p-2 overflow-x-hidden">
         <div className="between px-3 w-full gap- bg-lightGreen text-green p-2 rounded-xl">
           <p
@@ -53,7 +53,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="bg-[#1B2262] text-sm rounded-[1.8rem] text-center cursor-pointer hover:scale-95 transition-all duration-300 p-3">
-                Grant rewards
+                Rewards countdown
               </div>
             </div>
           </div>
@@ -88,6 +88,6 @@ export default function Home() {
 
         <Overview data={overview} classname="p-4" details />
       </main>
-    </DashboardLayout>
+    </DashboardProfileLayout>
   );
 }

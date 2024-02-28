@@ -1,4 +1,4 @@
-import DashboardLayout from "@/app/components/DashboardLayout";
+import {DashboardProfileLayout} from "@/app/components/DashboardLayout";
 import { rewards } from "@/shared/mock/rewards";
 
 const Rewards = () => {
@@ -11,7 +11,7 @@ const Rewards = () => {
   ];
 
   return (
-    <DashboardLayout path="Rewards">
+    <DashboardProfileLayout path="Rewards">
       <main className="flex gap-3 p-2 overflow-x-hidden flex-col">
         <h2 className="text-2xl font-semibold mb-4">Top 5 Performer Rewards</h2>
         {top5Rewards.map((positionRewards, index) => (
@@ -30,7 +30,7 @@ const Rewards = () => {
           </div>
         ))}
       </main>
-    </DashboardLayout>
+    </DashboardProfileLayout>
   );
 };
 

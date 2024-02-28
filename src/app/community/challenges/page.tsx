@@ -1,6 +1,6 @@
 "use client";
 
-import DashboardLayout from "@/app/components/DashboardLayout";
+import {DashboardLayout} from "@/app/components/DashboardLayout";
 import classnames from "@/shared/classnames";
 import { challenges } from "@/shared/mock/challenges";
 import { Button } from "@/app/components/Button";

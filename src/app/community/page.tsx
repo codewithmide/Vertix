@@ -1,6 +1,6 @@
 "use client";
 
-import DashboardLayout from "../components/DashboardLayout";
+import {DashboardLayout} from "../components/DashboardLayout";
 import Overview, { OverviewLoading } from "@/app/components/Overview";
 import { useRouter } from "next/navigation";
 import { useState } from "react";

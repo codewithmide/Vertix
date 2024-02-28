@@ -1,13 +1,13 @@
 "use client";
 
-import DashboardLayout from "@/app/components/DashboardLayout";
+import { DashboardProfileLayout } from "@/app/components/DashboardLayout";
 import classnames from "@/shared/classnames";
 import { challenges } from "@/shared/mock/challenges";
 
 const Task = () => {
 
   return (
-    <DashboardLayout path="Challenges">
+    <DashboardProfileLayout path="Challenges">
       <main className="flex-col flex gap-6 p-2 overflow-x-hidden">
         <div className="w-full flex flex-wrap between gap-4">
           {challenges.map((challenge: any, index: number) => (
@@ -33,7 +33,7 @@ const Task = () => {
           ))}
         </div>
       </main>
-    </DashboardLayout>
+    </DashboardProfileLayout>
   );
 };
 
